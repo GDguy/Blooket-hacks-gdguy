@@ -9,7 +9,7 @@
                 return Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner;
             };
 
-            if (!window.location.pathname.split('/').includes('blooks')) return alert('You must be in blooks area! (e.g. https://www.blooket.com/play/lobby)');
+            if (!window.location.pathname.split('/').includes('blooks')) return alert('You must be in blooks area! (e.g. https://dashboard.blooket.com/blooks)');
 
             reactHandler().stateNode.setState({ lockedBlooks: [], takenBlooks: [] });
             alert('Blooks unlocked!');
